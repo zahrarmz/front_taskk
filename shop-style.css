@@ -26,6 +26,7 @@ body {
   padding: 10px;
   font-size: 28px;
   pading-bottom: 20px;
+  text-align: center;
 }
 img {
   width: 300px;
@@ -67,4 +68,8 @@ a {
 }
 nav {
   background-color: #002c4e;
+}
+h2 {
+  text-align: center;
+  color: #002c4e;
 }

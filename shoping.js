@@ -1,8 +1,17 @@
-let valued = "jewelery";
+function searchCategory(valueSearch) {
+  let url = `https://fakestoreapi.com/products/category/${valueSearch}`;
+  axios.get(url).then(update);
+}
+function handleSubmit(event) {
+  event.preventDefault();
+  let valueSearch = document.querySelector(".search").value;
+  searchCategory(valueSearch);
+  let categoryname = document.querySelector(".category-name");
+  categoryname.innerHTML = valueSearch;
+}
 
-let url = `https://fakestoreapi.com/products/category/${valued}`;
-
-axios.get(url).then(update);
+let input = document.querySelector("form");
+input.addEventListener("submit", handleSubmit);
 
 function update(response) {
   let icon = document.querySelector("#image1");
