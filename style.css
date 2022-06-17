@@ -1,0 +1,115 @@
+
+  @media (min-width: 900px){
+    body {
+  background-image: url("./media/c.png");
+  background-repeat: no-repeat;
+  background-size: cover;}
+
+}
+ @media (max-width: 900px){
+    body {
+  background-image: url("./media/after.png");
+  background-repeat: repeat;
+  background-size: cover;
+  }
+
+}
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+
+.form {
+  position: relative;
+  background: #beaaee;
+  opacity: 0.9;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+}
+h3 {
+  text-align: center;
+  padding: 10px;
+  color: #00021B
+  font-family: FontAwesome, "Roboto", sans-serif;
+  font-size: 24px;
+}
+label {
+  color: #00021B;
+}
+.label_pad {
+  padding-bottom: 10px;
+}
+.form input {
+  font-family: FontAwesome, "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 10px;
+}
+.form button {
+  font-family: FontAwesome, "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  outline: 0;
+  background: #002c4e;
+  width: 100%;
+  border: 0;
+  border-radius: 30px;
+  margin: 0px 0px 8px;
+  padding: 15px;
+  color: #f2f2f2;
+
+  transition: all 0.3 ease;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.form button:hover,
+.form button:focus {
+  background: #E8299E;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+}
+.form button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#passError {
+  text-align: center;
+  color: red;
+  display: none;
+  font-size: 18px;
+}
+
+#passError.visible {
+  display: block;
+}
+
+#wrongpass {
+  text-align: center;
+  color: red;
+  display: none;
+  font-size: 18px;
+}
+
+#wrongpass.visible {
+  display: block;
+}
+
+.forgetpass {
+  padding-top: 8px;
+  text-align: center;
+}
+a {
+  color: #00021B;
+}

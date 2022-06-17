@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <html>
+    <head>
+      <title>Login</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta charset="utf-8" />
+      <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+
+    <body>
+      <div class="login-page">
+        <div class="form">
+          <form>
+            <h3>Login</h3>
+            <div class="label_pad">
+              <label>Email</label>
+            </div>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="zaahra.ramezanii@gmail.com"
+              required
+            />
+            <div class="label_pad">
+              <label>password</label>
+            </div>
+
+            <input
+              type="password"
+              id="password"
+              placeholder="your password"
+              password
+              required
+            />
+
+            <span role="alert" id="passError" aria-hidden="true">
+              your password must have 8 characters or more!
+            </span>
+
+            <span role="alert" id="wrongpass" aria-hidden="true">
+              wrong username or password!
+            </span>
+
+            <br />
+            <br />
+            <button id="login">LOGIN</button>
+          </form>
+          <div class="forgetpass">
+            <a href="https://google.com">Forget password?</a>
+          </div>
+        </div>
+      </div>
+      <script src="app.js"></script>
+    </body>
+  </html>
+</html>
